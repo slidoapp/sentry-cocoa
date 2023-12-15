@@ -21,6 +21,7 @@ let package = Package(
             publicHeadersPath: "Sentry/Public/",
             cxxSettings: [
                 .define("GCC_ENABLE_CPP_EXCEPTIONS", to: "YES"),
+                .unsafeFlags(["-O0"]),
                 .headerSearchPath("Sentry/include"),
                 .headerSearchPath("Sentry/include/HybridPublic"),
                 .headerSearchPath("Sentry/Public"),
